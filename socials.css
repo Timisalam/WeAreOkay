@@ -159,16 +159,16 @@ footer {
         height: 50vh;
     }
 
-    .instagram{
-        overflow: hidden;
-    }
+    
     .instagram{
         display: inline-block;
         align-items: center;
-        justify-content: center;
+        text-align: center;
         width: 90vw;
         padding:0% 3% 0% 3%;
+        margin-left: 2%;
     }
+  
 
 }
 @media only screen and (max-width: 400px) {
