@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+
+header {
+    background-color: #252929;
+    white-space: nowrap;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 15vh;
+    margin-right: 2%;
+}
+
+.nav-item {
+    margin: 1%;
+}
+
+.nav-item:hover {
+    transform: translateY(2px);
+
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    font-style: oblique;
+    /*moves first item in flexbox to very left*/
+}   
+
+.logo {
+    width: 12vh;
+    margin-left: 5vw;
+
+} 
+.nav-link:link {
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vh;
+}
+
+.nav-link:visited {
+    color: white;
+}
+
+
+.nav-link:hover {
+    color: black;
+}
+
+    
+
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+
+main {
+    flex-grow: 1;
+}
+
+
+.recent-video {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recent-video iframe{
+    width: 100vw;
+    height: 90vh;
+}
+.music{
+    padding: 5%;
+}
+
+.contact-socials {
+    display: flex;
+}
+
+.instagram{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    background-color: #252929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav{
+    width: 55vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-link, .footer-item p{
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    font-size: 3vh;
+    font-family:'Times New Roman', Times, serif;
+} 
+
+
+.footer-item{
+    margin: 2%;
+}
+.footer-link:hover{
+    color: black;
+    transform: translateY(2px);
+}
+@media only screen and (max-width: 450px) {
+    .nav-link:link {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 6vh;
+        margin-left: 2vw;
+    }
+
+    .footer-link {
+        font-size: 14px;
+    }
+    .recent-video iframe{
+        height: 50vh;
+    }
+
+    .instagram{
+        overflow: hidden;
+    }
+    .instagram{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+        padding:0% 3% 0% 3%;
+    }
+
+}
+@media only screen and (max-width: 400px) {
+    .nav-link:link{
+        font-size: 12px;
+    }
+    
+}
