@@ -1,6 +1,7 @@
 /*GENERAL*/
 
 * {
+    margin: 0;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -42,6 +43,8 @@ header {
     list-style: none;
     height: 15vh;
     margin-right: 2%;
+    padding: 0;
+
 }
 
 

@@ -42,6 +42,7 @@ header {
     list-style: none;
     height: 15vh;
     margin-right: 2%;
+    padding: 0;
 }
 
 .nav-item {
