@@ -203,3 +203,25 @@ footer {
     color: black;
     transform: translateY(2px);
 }
+@media only screen and (max-width: 450px) {
+    .nav-link:link {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 6vh;
+        margin-left: 2vw;
+    }
+
+
+    .footer-link {
+        font-size: 14px;
+    }
+
+}
+@media only screen and (max-width: 400px) {
+    .nav-link:link{
+        font-size: 12px;
+    }
+    
+}
