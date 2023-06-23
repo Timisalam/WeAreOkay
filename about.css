@@ -303,7 +303,7 @@ footer {
     text-decoration: none;
     color: white; 
     font-weight: bold;
-    font-size: 16px;
+    font-size: 3vh;
     font-family:'Times New Roman', Times, serif;
 }
 
@@ -336,3 +336,10 @@ footer {
     }
     
 }
+@media only screen and (min-width: 540px) and (max-width: 1080px) {
+    .nav-link:link{
+            font-size: 22px;
+        }
+        
+    }
+    

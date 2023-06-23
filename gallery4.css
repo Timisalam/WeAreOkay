@@ -234,3 +234,10 @@ footer {
     }
     
 }
+@media only screen and (min-width: 540px) and (max-width: 1080px) {
+    .nav-link:link{
+            font-size: 22px;
+        }
+        
+    }
+    

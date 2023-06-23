@@ -303,3 +303,75 @@ footer {
     }
     
 }
+@media only screen and (max-width: 650px){
+    .grid {
+        margin: 3% 4% 5% 1%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #horizontal1 {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+        aspect-ratio: 2;
+    }
+    
+    #horizontal1 img {
+        aspect-ratio: 2;
+        object-position: bottom;
+    }
+    
+    #horizontal2 {
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+        aspect-ratio: 1;
+    }
+    
+    #horizontal2 img {
+        aspect-ratio: 1;
+        object-position: bottom;
+    }
+    
+    #vertical1 {
+        grid-row: 2 / span 2;
+        grid-column: 2 / span 1;
+        aspect-ratio: .5;
+    }
+    
+    #vertical1 img {
+        aspect-ratio: .5;
+        object-position: center;
+    }
+    
+    #vertical2 {
+        grid-row: 3 / span 2;
+        grid-column: 1 / span 1;
+        aspect-ratio: .5;
+    }
+    
+    #vertical2 img {
+        aspect-ratio: .5;
+        object-position: center;
+    }
+    
+    #square1 {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    #square1 img {
+        object-position: right;
+        aspect-ratio: 1;
+    }
+    
+
+    .gridLogo {
+        display: none;
+    }
+}
+@media only screen and (min-width: 540px) and (max-width: 1080px) {
+    .nav-link:link{
+            font-size: 22px;
+        }
+        
+    }
+    
