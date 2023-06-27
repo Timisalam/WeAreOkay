@@ -77,22 +77,22 @@ main {
 
 
 .recent-video {
-    position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
-    /* 16:9 aspect ratio (9 / 16 * 100 = 56.25) */
     overflow: hidden;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+}
+.recent-video img {
+    max-width: 100%;
+    height: auto;
 }
 
-.recent-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.recent-video div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 .music {
     padding: 5%;
@@ -150,6 +150,9 @@ main {
 
 .clickMe:hover {
     transform: scale(1.2);
+}
+.music{
+    padding: 5%;
 }
 
 
@@ -213,11 +216,7 @@ footer {
     .footer-link {
         font-size: 14px;
     }
-    .recent-video iframe {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 4/3;
-    }
+   
     .clickMe{
         font-size: 12px;
     }
@@ -282,9 +281,6 @@ footer {
         font-size: 16px;
     }
 
-    .recent-video {
-        padding-bottom: 75%;
-    }
 
     .clickMe:active {
         transform: scale(1.2);
