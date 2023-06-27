@@ -308,6 +308,7 @@ footer {
     }   
     .page{
         display: inline;
+        padding: 5%;
     }
     .description {
         font-size: 20px;
@@ -324,6 +325,10 @@ footer {
     }
     .logo{
         width: 16vw;
+        margin-left: 10px;
+    }
+    .description{
+        font-size: 16px;
     }
     
     
