@@ -15,7 +15,7 @@ a:link {
     color: rgb(137, 137, 137);
 }
 
-a:hover{
+a:hover {
     color: rgb(216, 216, 216);
 }
 
@@ -147,7 +147,7 @@ main {
     object-position: right;
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 450px) {
     .text {
         font-size: 15px;
         margin: 4% 0;
@@ -160,7 +160,7 @@ main {
     }
 }
 
-@media only screen and (min-width: 1650px){
+@media only screen and (min-width: 1650px) {
     .text {
         font-size: 22px;
     }
@@ -185,7 +185,7 @@ footer {
     justify-content: center;
 }
 
-.footer-nav{
+.footer-nav {
     width: 55vw;
     display: flex;
     align-items: center;
@@ -195,22 +195,25 @@ footer {
 
 }
 
-.footer-link, .footer-item p{
+.footer-link,
+.footer-item p {
     text-decoration: none;
-    color: white; 
+    color: white;
     font-weight: bold;
     font-size: 3vh;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.footer-item{
+.footer-item {
     margin: 2%;
 }
-.footer-link:hover{
+
+.footer-link:hover {
     color: black;
     transform: translateY(2px);
 }
-@media only screen and (max-width: 450px) {
+
+@media only screen and (max-width: 500px) {
     .nav-link:link {
         font-size: 14px;
     }
@@ -226,32 +229,64 @@ footer {
     }
 
 }
+
 @media only screen and (max-width: 400px) {
-    .nav-link:link{
+    .nav-link:link {
         font-size: 12px;
     }
-    
+
 }
+
 @media only screen and (max-width: 360px) {
-    .nav-link:link{
-        font-size: 8px;
-    }
-    .footer-link{
+    .nav-link:link {
         font-size: 10px;
     }
-    .CTA:active{
-        transform: scale(1.3);
+
+    .footer-link {
+        font-size: 10px;
     }
-    .logo{
+
+
+
+    .logo {
+        width: 10vw;
         margin-left: 10px;
     }
-    
-    
-}
-@media only screen and (min-width: 540px) and (max-width: 1080px) {
-    .nav-link:link{
-            font-size: 22px;
-        }
-        
+
+
+}@media only screen and (max-width: 360px) {
+    .nav-link:link {
+        font-size: 10px;
     }
-    
+
+    .footer-link {
+        font-size: 10px;
+    }
+
+
+
+    .logo {
+        margin-left: 10px;
+    }
+
+
+}
+
+@media only screen and (min-width: 450px) and (max-width: 500px) {
+    .logo {
+        width: 14vw;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+    .nav-link:link {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1080px) {
+    .nav-link:link {
+        font-size: 22px;
+    }
+
+}
