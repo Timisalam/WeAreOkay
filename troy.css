@@ -247,10 +247,7 @@ footer {
         font-size: 14px;
     }
 
-    .logo {
-        width: 6vh;
-        margin-left: 2vw;
-    }
+    
 
     .page {
         padding: 5% 3% 5% 3%;
@@ -281,6 +278,11 @@ footer {
     }
 
 
+}
+@media only screen and (min-width: 450px) and (max-width: 500px) {
+    .logo {
+        width: 14vw;
+    }
 }
 @media only screen and (max-width: 400px) {
     .description {
@@ -323,7 +325,7 @@ footer {
     }   
     .page{
         display: inline;
-        padding: 5%;
+        padding: 50%;
     }
     .description {
         font-size: 20px;

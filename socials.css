@@ -81,12 +81,13 @@ main {
     overflow: hidden;
     margin-bottom: 2%;
 }
+
 .recent-video img {
     max-width: 100%;
     height: auto;
 }
 
-.recent-video div{
+.recent-video div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,9 +95,7 @@ main {
 
 
 
-.music {
-    padding: 5%;
-}
+
 
 .contact-socials {
     display: flex;
@@ -151,7 +150,8 @@ main {
 .clickMe:hover {
     transform: scale(1.2);
 }
-.music{
+
+.music {
     padding: 5%;
 }
 
@@ -216,11 +216,17 @@ footer {
     .footer-link {
         font-size: 14px;
     }
-   
-    .clickMe{
+
+    .clickMe {
         font-size: 12px;
     }
-   
+
+        .recent-video img{
+            height: auto;
+            width: 100%;
+            aspect-ratio: 16/9;
+
+        }
 
 }
 
@@ -229,7 +235,7 @@ footer {
         font-size: 12px;
     }
 
-    
+
 }
 
 @media only screen and (max-width: 399px) {
@@ -237,7 +243,7 @@ footer {
         font-size: 10px;
     }
 
-   
+
 
     .footer-link {
         font-size: 10px;
@@ -247,7 +253,7 @@ footer {
         display: inline;
     }
 
-  
+
 
 
     .logo {
@@ -263,7 +269,7 @@ footer {
         width: 14vw;
     }
 
- 
+
 
     .instagram {
         display: inline;
@@ -273,7 +279,7 @@ footer {
         transform: scale(1.2);
     }
 }
-  
+
 
 
 @media only screen and (min-width: 501px) and (max-width: 600px) {

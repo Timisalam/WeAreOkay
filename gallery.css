@@ -99,17 +99,19 @@ main a:visited {
 }
 
 .grid {
-    margin: 2% 7% 4% 5%;
+    margin: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1%;
+    height: fit-content;
+}
+
+.gridLogo {
     aspect-ratio: 1;
 }
 
 .imageDiv {
     width: 100%;
     height: 100%;
-    aspect-ratio: 1;
     position: relative;
 }
 
@@ -144,28 +146,15 @@ main a:visited {
     opacity: 1;
 }
 
-.gridLogo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .gridLogo {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#gridLogo1 {
-    padding: 17% 13%;
-}
-
-#gridLogo2 {
-    padding: 8% 7%;
-}
-
-#gridLogo3 {
-    padding: 18%;
+.gridLogo img {
+    width: 75%;
+    object-fit: cover;
 }
 
 #horizontal1 {
@@ -216,7 +205,7 @@ main a:visited {
 
 @media only screen and (max-width: 650px){
     .grid {
-        margin: 3% 4% 5% 1%;
+        margin-bottom: 3%;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -285,10 +274,6 @@ main a:visited {
     .clickMe {
         font-size: 8px;
         padding: 0% 1%;
-    }
-
-    .grid {
-        margin: 6% 4% 8% 1%;
     }
 }
 
