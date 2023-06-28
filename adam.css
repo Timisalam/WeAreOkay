@@ -332,8 +332,11 @@ footer {
     .page{
         display: inline;
     }
+    .page div{
+        aspect-ratio: 1;
+    }
     .description {
-        font-size: 20px;
+        font-size: 18px;
         border-radius: 0%;
     }
     .page img {      
@@ -348,10 +351,7 @@ footer {
     .description{
         font-size: 16px;
     }
-    .logo {
-        width: 14vw;
-        margin-left: 10px;
-    }
+    
     
     
 }

@@ -327,8 +327,11 @@ footer {
         display: inline;
         padding: 50%;
     }
+    .page div{
+        aspect-ratio: 1;
+    }
     .description {
-        font-size: 20px;
+        font-size: 18px;
         border-radius: 0%;
     }
     .page img {      
@@ -340,10 +343,7 @@ footer {
     .CTA:active{
         transform: scale(1.3);
     }
-    .logo{
-        width: 16vw;
-        margin-left: 10px;
-    }
+    
     .description{
         font-size: 16px;
     }
