@@ -235,10 +235,13 @@ footer {
         font-size: 12px;
     }
 
+    .instagram {
+        display: inline;
+    }
 
 }
 
-@media only screen and (max-width: 399px) {
+@media only screen and (max-width: 360px) {
     .nav-link:link {
         font-size: 10px;
     }
