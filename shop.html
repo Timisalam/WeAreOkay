@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="gallery2.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="shop.css" />
     <title>WeAreOkay</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,7 @@
     <header>
         <ul class="nav">
             <li class="nav-item">
-                <a href="index.html"><img class="logo"
-                        src="https://github.com/serchpics/Homepage/assets/92872150/d8b6284a-2eae-4b68-97dd-4c4e088a2bb6"
-                        alt="logo"></a>
+                <a href="index.html"><img class="logo" src="https://github.com/serchpics/Homepage/assets/92872150/d8b6284a-2eae-4b68-97dd-4c4e088a2bb6" alt="logo"></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
@@ -44,42 +42,11 @@
     </header>
 
     <main>
-        <div class="title">
-            <p>Gallery 2</p>
-        </div>
-        <div class="container">
-            <div class="mainImage">
-                <img src="https://github.com/serchpics/Homepage/assets/92872150/c25f2b31-1e72-4cc7-94c4-c7e92e5738d3"
-                    alt="">
-            </div>
-
-            <div class="text">
-                <p>
-                    These photographs capture the raw energy, sweat-drenched faces, and frenetic guitar solos.The lead
-                    singer's passionate voice merges with explosive chords, while the rhythm section pulsates with
-                    intensity. Each photograph immortalizes the band's captivating live performance and the vibrant
-                    spirit of rock and indie music.
-                </p>
-            </div>
-
-            <div class="grid-2">
-                <div><img
-                        src="https://github.com/serchpics/Homepage/assets/92872150/33199b66-e199-4008-a74d-21106fb39605"
-                        alt=""></div>
-                <div><img
-                        src="https://github.com/serchpics/Homepage/assets/92872150/0e48950c-0c6e-426e-8153-a5f04e5f2fd1"
-                        alt=""></div>
-                <div><img
-                        src="https://github.com/serchpics/Homepage/assets/92872150/493e8447-0bda-4055-bd4b-e30635cd376b"
-                        alt="" class="right"></div>
-                <div><img
-                        src="https://github.com/serchpics/Homepage/assets/92872150/c1393195-3e63-4308-9a2e-be380ae19dd9"
-                        alt="" class="right"></div>
-            </div>
-
+        <div class="announcement-container">
+            <div><img src="https://raw.githubusercontent.com/Timisalam/WeAreOkay/main/IMG_6450.png" alt=""></div>
+            <div class="announcement"><p>Coming soon</p></div>
         </div>
     </main>
-
     <footer>
         <ul class="footer-nav">
             <li class="footer-item">
@@ -111,6 +78,63 @@
             </li>
         </ul>
     </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        setTimeout(automaticSlides, 2000);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        function automaticSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            dots[slideIndex - 1].className += " active";
+
+            setTimeout(automaticSlides, 3000); // Change image every 2 seconds
+        }
+
+    </script>
 </body>
 
 </html>
