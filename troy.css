@@ -366,6 +366,7 @@ footer {
 
 }
 
+
 @media only screen and (min-width: 600px) and (max-width: 1080px) {
     .nav-link:link {
         font-size: 22px;
@@ -376,7 +377,7 @@ footer {
     }
 
     .description {
-        font-size: 18px;
+        font-size: 20px;
         border-radius: 0%;
     }
 
@@ -395,5 +396,12 @@ footer {
         transition: .5s ease-in-out;
     }
 
+
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .description {
+        font-size: 16px;
+        border-radius: 0%;
+    }
 
 }
