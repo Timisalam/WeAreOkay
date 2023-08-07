@@ -199,7 +199,25 @@ main a:visited {
     object-position: center;
 }
 
+#square1 {
+    grid-column: 2;
+    grid-row: 2;
+    aspect-ratio: 1;
+}
+
 #square1 img {
+    aspect-ratio: 1;
+    object-position: right;
+}
+
+#square2 {
+    grid-column: 1;
+    grid-row: 2;
+    aspect-ratio: 1;
+}
+
+#square2 img {
+    aspect-ratio: 1;
     object-position: right;
 }
 
@@ -263,7 +281,17 @@ main a:visited {
         object-position: right;
         aspect-ratio: 1;
     }
+
+    #square2 {
+        grid-column: 1 / span 2;
+        grid-row: 5;
+        aspect-ratio: 2;
+    }
     
+    #square2 img {
+        aspect-ratio: 2;
+        object-position: center;
+    }
 
     .gridLogo {
         display: none;
