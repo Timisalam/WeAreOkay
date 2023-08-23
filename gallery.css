@@ -146,17 +146,6 @@ main a:visited {
     opacity: 1;
 }
 
-.gridLogo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.gridLogo img {
-    width: 75%;
-    object-fit: cover;
-}
-
 #horizontal1 {
     grid-column: 1 / span 2;
     aspect-ratio: 2;
@@ -168,18 +157,19 @@ main a:visited {
 }
 
 #horizontal2 {
-    grid-column: 2 / span 2;
-    aspect-ratio: 2;
+    grid-column: 2;
+    grid-row: 3;
+    aspect-ratio: 1;
 }
 
 #horizontal2 img {
-    aspect-ratio: 2;
+    aspect-ratio: 1;
     object-position: bottom;
 }
 
 #vertical1 {
     grid-row: 2 / span 2;
-    grid-column: 3 / span 1;
+    grid-column: 1 / span 1;
     aspect-ratio: .5;
 }
 
@@ -189,8 +179,8 @@ main a:visited {
 }
 
 #vertical2 {
-    grid-row: 3 / span 2;
-    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+    grid-column: 3 / span 1;
     aspect-ratio: .5;
 }
 
@@ -199,7 +189,25 @@ main a:visited {
     object-position: center;
 }
 
+#square1 {
+    grid-column: 2;
+    grid-row: 2;
+    aspect-ratio: 1;
+}
+
 #square1 img {
+    aspect-ratio: 1;
+    object-position: right;
+}
+
+#square2 {
+    grid-column: 3;
+    grid-row: 1;
+    aspect-ratio: 1;
+}
+
+#square2 img {
+    aspect-ratio: 1;
     object-position: right;
 }
 
@@ -263,7 +271,17 @@ main a:visited {
         object-position: right;
         aspect-ratio: 1;
     }
+
+    #square2 {
+        grid-column: 1 / span 2;
+        grid-row: 5;
+        aspect-ratio: 2;
+    }
     
+    #square2 img {
+        aspect-ratio: 2;
+        object-position: center;
+    }
 
     .gridLogo {
         display: none;
