@@ -127,7 +127,7 @@ main {
 .grid-3 {
     margin: 0% 5%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5%;
 }
 

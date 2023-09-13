@@ -167,15 +167,14 @@ main a:visited {
     object-position: bottom;
 }
 
-#vertical1 {
-    grid-row: 2 / span 2;
-    grid-column: 1 / span 1;
-    aspect-ratio: .5;
+#square4 {
+    grid-row: 2;
+    aspect-ratio: 1;
 }
 
-#vertical1 img {
+#square4 img {
     aspect-ratio: .5;
-    object-position: center;
+    
 }
 
 #vertical2 {
@@ -209,6 +208,14 @@ main a:visited {
 #square2 img {
     aspect-ratio: 1;
     object-position: right;
+}
+#square3 {
+    grid-row: 3;
+    aspect-ratio: 1;
+}
+#square3 img {
+    aspect-ratio: .5;
+    
 }
 
 @media only screen and (max-width: 650px){
